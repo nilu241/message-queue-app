@@ -1,4 +1,4 @@
-# **Message Queue Producer-Consumer Application**
+# **Message Queue Application**
 
 ## **Project Overview**
 
@@ -19,7 +19,7 @@ Additionally, the project includes unit tests to verify both successful and fail
 
 ## **Technologies Used**
 
-- Java 11
+- Java 8
 - Maven (for dependency management)
 - JUnit 5 (for testing)
 
@@ -34,10 +34,10 @@ src/
 │   │   ├── MessageQueue.java
 │   │   ├── Producer.java
 │   │   ├── Consumer.java
-│   │   └── Main.java
+│   │   └── App.java
 ├── test/
 │   ├── java/
-│   │   └── MessageQueueTest.java
+│   │   └── AppTest.java
 pom.xml
 README.md
 ```
@@ -46,7 +46,7 @@ README.md
 
 ## **Prerequisites**
 
-- **Java JDK 11** or later
+- **Java JDK 8** or later
 - **Maven** (installed and added to your PATH)
 
 ---
@@ -58,8 +58,8 @@ README.md
 Clone this project to your local machine:
 
 ```bash
-git clone https://github.com/your-username/MessageQueueProducerConsumer.git
-cd MessageQueueProducerConsumer
+git clone https://github.com/your-username/message-queue-app.git
+cd message-queue-app
 ```
 
 ### **2. Build the Project**
@@ -75,14 +75,14 @@ mvn clean install
 Run the application using Maven:
 
 ```bash
-mvn exec:java -Dexec.mainClass="Main"
+mvn exec:java -Dexec.mainClass="App"
 ```
 
 Alternatively, you can compile and run it manually:
 
 ```bash
 javac src/main/java/*.java
-java -cp src/main/java Main
+java -cp src/main/java App
 ```
 
 ---
@@ -154,8 +154,3 @@ Total Errors Encountered: 1
 
 ---
 
-## **License**
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
----
